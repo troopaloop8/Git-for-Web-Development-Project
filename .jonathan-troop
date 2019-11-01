@@ -189,11 +189,37 @@ Copy the questions below into the firt-lastname.txt file on your github repo - a
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+
+    A block element starts on a line and takes up the entire space. examples include <p> <footer> and <div>.
+
+    An inline element doesn't start a new line and only takes up as much width as it uses. exmaples include <span> <button> and <img>
+
     2. What happens when an element is positioned absolutely? 
+
+    The element is positioned to its nearest closest relative, but does not have to adhere to the positioning of everytthing else in that section. It also gives 
+    the flexibility to position the element wherever you want to display it, even overlapping other elements. 
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+    I would identify the element the content is in, and add a width property in css to it. I could set it to a fixed width, such as 600px, or a % of the width (or a mix of both). 
+    This should ensure that the conent will fit within a width and wrap down to fill itself as necessary.
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+    Display block: <table></table> <nav></nav> and <form></form> 
+    Display inline: <script></script> <strong></strong> and <a></a> 
+    Display inline-block: none, from what I could come up with. It is a CSS property and allows to give width and height to an inline element. Often used for
+    horizontal positioning. 
+
     5. In your own words, explain the box model. What is the fix for the box model? 
 
+    The box model refers to the several layers surrounding any content box. On the outside is the margin, which can be more thought of as space around the box.
+    Next, the border can be of any (reasonable) width or color and is the outline of the box. Next padding is the space between the border and the content. 
+    It takes on the background color of the content box. Lastly, nested inside of this all is the content box, which is where text, images, and video will go.
+    These boxes can be maniuplated and fine tuned to make a near infinite possibility of unique web pages.
+
+    According to https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/, the box model doesn't handle width and other sizing/scaling very well. 
+    On good fix is to use the box-sizing:border-box property, which solves some of these issues by setting the width as the total including the padding and border. 
 
 
    --> 
